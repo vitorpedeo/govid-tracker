@@ -2,9 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width,height=device-height initial-scale=1"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="shortcut icon" href="./assets/GO.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/GO.svg" type="image/x-icon" />
     <title>GovidTracker</title>
     <script
       src="https://kit.fontawesome.com/008a52c14b.js"
@@ -12,58 +15,56 @@
     ></script>
   </head>
   <body>
-    <div class="menu" id="menu" >
-      <div class="close-menu" id="close-menu"></div>
-
-      <p>Acesse esses sites para informações mais detalhadas!</p>
-
-      <div class="menu-links">
-        <p>
-          <a href="https://covid.saude.gov.br/"
-            >Coronavírus Brasil <i class="fas fa-arrow-right"></i>
-          </a>
-        </p>
-        <p>
-          <a href="https://www.trackcorona.live/"
-            >TrackCorona <i class="fas fa-arrow-right"></i>
-          </a>
-        </p>
-      </div>
-    </div>
-
     <header>
       <img src="./assets/GOvidTracker.png" alt="" />
       <nav>
-        <div class="hamburguer" id="hamburguer" >
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
+        <div class="hamburguer" id="hamburguer">
+          <div class="line" id="line"></div>
         </div>
       </nav>
     </header>
 
+    <div class="menu" id="menu">
+      <p>Acesse esse sites para informações mais detalhadas!</p>
+
+      <p>
+        <a href="https://covid.saude.gov.br/"
+          >Coronavírus Brasil <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+      <p>
+        <a href="https://www.trackcorona.live/"
+          >TrackCorona <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </div>
+
     <div class="main">
       <div class="info">
         <p>Casos Confirmados</p>
-        <span id="confirmed-cases" ></span>
+        <span id="confirmed-cases"></span>
       </div>
       <div class="info">
         <p>Casos Suspeitos</p>
-        <span id="suspect-cases" ></span>
+        <span id="suspect-cases"></span>
       </div>
       <div class="info">
         <p>Casos Suspeitos Rejeitados</p>
-        <span id="rejected-cases" ></span>
+        <span id="rejected-cases"></span>
       </div>
       <div class="info">
         <p>Mortes</p>
-        <span id="deaths" ></span>
+        <span id="deaths"></span>
       </div>
       <div class="info">
         <p>Última Atualização</p>
-        <span id="last-update" ></span>
+        <span id="last-update"></span>
       </div>
     </div>
+
+    <footer>
+      <p>© 2020, Vitor Pereira. All rights reserved.</p>
+    </footer>
 
     <script src="./js/menu.js"></script>
     <script src="./js/api.js"></script>

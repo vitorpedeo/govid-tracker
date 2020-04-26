@@ -1,11 +1,8 @@
 const menu = document.getElementById("menu");
-const openMenu = document.getElementById("hamburguer");
-const closeMenu = document.getElementById("close-menu");
+const hamburguer = document.getElementById("hamburguer");
+const line = document.getElementById("line");
 
-openMenu.addEventListener("click", () => {
-    menu.classList.add("active");
-});
-
-closeMenu.addEventListener("click", () => {
-    menu.classList.remove("active");
+hamburguer.addEventListener("click", () => {
+  menu.classList.toggle("active");
+  line.classList.toggle("active");
 });
