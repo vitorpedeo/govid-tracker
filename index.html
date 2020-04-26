@@ -1,73 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+  <div class="side-menu" id="side-menu">
+    <p class="side-menu-title">
+      Acesse esses sites para informações mais detalhadas!
+    </p>
+
+    <p class="links">
+      <a href="https://covid.saude.gov.br/">Coronavírus Brasil</a>
+      <i class="fas fa-arrow-right"></i>
+    </p>
+    <p class="links">
+      <a href="https://www.trackcorona.live/">TrackCorona</a>
+      <i class="fas fa-arrow-right"></i>
+    </p>
+  </div>
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./assets/GO.png" sizes="32x32" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="shortcut icon" href="./assets/GO.svg" type="image/x-icon" />
+
     <title>GOvidTracker</title>
+
     <script
       src="https://kit.fontawesome.com/008a52c14b.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <header>
-      <img src="./assets/GOvidTracker.png" alt="" />
-      <img
-        src="./assets/menu-circle.png"
-        alt=""
-        class="circle-menu"
-        id="circle-menu"
-      />
+    <header class="page-header">
+      <img src="./assets/GOvidTracker.svg" alt="" />
       <div class="hamburguer" id="hamburguer">
         <div class="line" id="line"></div>
       </div>
-
-      <div class="menu-options" id="menu-options">
-        <p>Acesse esses sites para informações mais detalhadas !</p>
-        <p>
-          <a href="https://covid.saude.gov.br/"
-            >Coronavírus Brasil <i class="fas fa-arrow-right"></i>
-          </a>
-        </p>
-        <p>
-          <a href="https://www.trackcorona.live/"
-            >CoronaTracker <i class="fas fa-arrow-right"></i>
-          </a>
-        </p>
-      </div>
     </header>
 
-    <div class="main">
+    <div class="main-content">
       <div class="card">
-        <p class="title">Casos Confirmados</p>
-        <span id="confirmed-cases" ></span>
+        <p class="card-title">Casos Confirmados</p>
+        <span class="confirmed-cases" id="confirmed-cases">5000</span>
       </div>
       <div class="card">
-        <p class="title">Casos Suspeitos</p>
-        <span id="suspect-cases" ></span>
+        <p class="card-title">Casos Suspeitos</p>
+        <span class="suspect-cases" id="suspect-cases">5000</span>
       </div>
       <div class="card">
-        <p class="title">Casos Suspeitos Rejeitados</p>
-        <span id="rejected-cases" ></span>
+        <p class="card-title">Suspeitas Descartadas</p>
+        <span class="refused-suspects" id="refused-suspects">5000</span>
       </div>
       <div class="card">
-        <p class="title">Mortes Confirmadas</p>
-        <span id="deaths" ></span>
+        <p class="card-title">Mortes</p>
+        <span class="deaths" id="deaths">5000</span>
       </div>
       <div class="card">
-        <p class="title">Última Atualização</p>
-        <span id="last-update" ></span>
+        <p class="card-title">Última Atualização</p>
+        <span class="last-update" id="last-update">5000</span>
       </div>
     </div>
 
-    <footer>
-      <img src="./assets/footer.png" alt="" />
-      <p class="footer-text">© 2020, Vitor Pereira. All rights reserved.</p>
+    <footer class="footer">
+      <p>© 2020, GOvidTracker. All rights reserved.</p>
     </footer>
 
-    <script src="./js/menu.js"></script>
+    <script src="./js/sideMenu.js"></script>
     <script src="./js/api.js"></script>
   </body>
 </html>

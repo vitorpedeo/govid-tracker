@@ -1,6 +1,6 @@
 const confirmedCases = document.getElementById("confirmed-cases");
 const suspectCases = document.getElementById("suspect-cases");
-const rejectedCases = document.getElementById("rejected-cases");
+const refusedSuspects = document.getElementById("refused-suspects");
 const deaths = document.getElementById("deaths");
 const lastUpdate = document.getElementById("last-update");
 
@@ -19,13 +19,9 @@ window.addEventListener("load", async () => {
 
   dateOfLastUpdate = `${dayOfLastUpdate}-${monthOfLastUpdate}-${yearOfLastUpdate}`;
 
-  //Pegando a hora de atualização
-  const timeOfLastUpdate = responseData.datetime.split("T")[1];
-  const exactTimeOfLastUpdate = timeOfLastUpdate.split(".")[0];
-
   confirmedCases.innerText = responseData.cases;
   suspectCases.innerText = responseData.suspects;
-  rejectedCases.innerText = responseData.refuses;
+  refusedSuspects.innerText = responseData.refuses;
   deaths.innerText = responseData.deaths;
-  lastUpdate.innerHTML = `${dateOfLastUpdate} <br> ${exactTimeOfLastUpdate}`;
+  lastUpdate.innerHTML = `${dateOfLastUpdate}`;
 });
