@@ -1,8 +1,10 @@
-const menu = document.getElementById("menu");
 const hamburguer = document.getElementById("hamburguer");
+const circleMenu = document.getElementById("circle-menu");
+const menuOptions = document.getElementById("menu-options");
 const line = document.getElementById("line");
 
 hamburguer.addEventListener("click", () => {
-  menu.classList.toggle("active");
   line.classList.toggle("active");
+  circleMenu.classList.toggle("active");
+  menuOptions.classList.toggle("active");
 });
