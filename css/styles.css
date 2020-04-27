@@ -62,7 +62,7 @@ body {
   position: absolute;
   right: 0;
   width: 0;
-  height: 120vh;
+  height: 175vh;
   background-color: black;
   transition: 0.2s;
 }
@@ -167,6 +167,32 @@ body {
   color: #eef9bf;
 }
 
+.description {
+  padding: 0 10px;
+  margin: 20px 0;
+  width: 100%;
+  color: #fff;
+}
+
+.info-title {
+  margin-bottom: 5px;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.info-text {
+  font-size: 20px;
+  text-align: justify;
+}
+
+.info-text a {
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+
 .footer {
   padding: 15px 0;
   display: flex;
@@ -180,7 +206,7 @@ body {
 
 @media screen and (min-width: 800px) {
   .side-menu {
-    height: 100vh;
+    height: 150vh;
   }
 
   .hamburguer {
@@ -192,6 +218,14 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     justify-items: center;
+  }
+
+  .info-text {
+    text-align: center;
+  }
+
+  .info-text a {
+    display: inline;
   }
 
   .card:last-child {
